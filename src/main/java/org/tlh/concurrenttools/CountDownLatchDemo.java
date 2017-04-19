@@ -23,7 +23,7 @@ public class CountDownLatchDemo {
 		HSSFSheet sheet = workbook.createSheet("sheet1");
 
 		ExecutorService threadPool = Executors.newFixedThreadPool(THREAD_COUNT);
-		int start, end, total = 50, pre = total / THREAD_COUNT;
+		int start, end, total = 5000, pre = total / THREAD_COUNT;
 
 		for (int i = 0; i < THREAD_COUNT; i++) {
 			start = i * pre;
